@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground">
     
     <ImageView
         android:id="@+id/photoImageView"
@@ -14,7 +15,8 @@
         android:layout_marginTop="6dp"
         tools:src="@drawable/ic_user_avatar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="contentDescription"/>
 
     <TextView
         android:id="@+id/userNameTextView"
@@ -53,7 +55,8 @@
         android:background="?android:attr/selectableItemBackgroundBorderless"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="contentDescription"/>
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
